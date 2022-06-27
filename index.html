@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Gallery with tags | Tun Min Ko Ko</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+    <div class="container">
+        <h1 style="text-align:center;">Canvas Gallery with tags</h1>
+        <div class="canvas-wrapper">
+            <canvas id="sliderCanvas" style="border:1px solid #eee;" width="600" height="400"></canvas>
+        </div>        
+    </div>
+
+    <div class="container">
+        <div class="thumbnails-wrapper" id="thumbnails-list">
+
+        </div>
+    </div>
+
+    <div class="container">
+        <hr>
+    </div>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="img-name-wrapper">
+                Image Name : <span id="img-name"></span>
+            </div>
+            <div class="img-list-wrapper">
+                <button id="prev" onclick="draw_prev_image()" class="btn default">Prev</button>
+                <span id="img-list-nav"></span>
+                <button id="next" onclick="draw_next_image()" class="btn default">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="btn-wrapper">
+            <button id="btnDelete" onclick="delete_image()" class="btn delete">Delete Image</button>
+            <label for="fileinput" class="btn success file-input">Upload New Image</label>
+            <input type="file" id="fileinput" multiple accept=".jpg,.jpeg,.png" style="display: none;">
+        </div>
+    </div>
+
+    <div class="container">
+        <hr>
+    </div>
+
+    <div class="container">
+        <label for="enterTags">Please enter tags for image</label><br><br>
+        <input id="enterTags" type="text" />
+        <ul id="saved-tags"></ul>
+        <button onclick="delete_all_tags()" class="btn delete">Delete All Tags</button>
+    </div>
+
+</body>
+<script src="scripts.js"></script>
+</html>

@@ -1,0 +1,144 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+/* Container */
+.container{
+    padding: 0 15px;
+    margin: auto;
+    max-width: 600px;
+}
+
+/* Canvas */
+.canvas-wrapper{
+    width:100%;
+    display: flex;
+    justify-content: center;   
+    margin-bottom: 20px;
+}
+
+#sliderCanvas{
+    max-width: 100%;
+}
+
+/* Content */
+.content-wrapper{
+    width:600px;
+    max-width: 100%;
+    display: flex;
+    margin: 15px auto;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.img-name-wrapper{
+    font-size:18px;
+    font-weight: bold;
+}
+
+.img-list-wrapper{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+#img-list-nav{
+    font-size:14px;
+    line-height: 24px;
+}
+
+.btn{
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.success{
+    background-color: #04AA6D;
+}
+
+.success:hover{
+    background-color: #46a049;
+}
+  
+.default{
+    background-color: #e7e7e7;
+    color: black;
+}
+
+.default:hover{
+    background: #ddd;
+}
+
+.btn-wrapper{
+    display: flex;
+    width:600px;
+    max-width: 100%;
+    justify-content: flex-end;
+    margin:auto;
+}
+
+.delete{
+    background-color: #f44336;
+    margin-right:15px;
+}
+
+.delete:hover{
+    background: #da190b;
+}
+
+.file-input{
+    cursor: pointer;
+    font-size:14px;
+}
+
+hr{
+    margin: 20px 0px;
+}
+
+#saved-tags{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.single-delete-btn{
+    border: none;
+    background-color: inherit;
+    padding: 5px 15px;
+    font-size: 12px;
+    cursor: pointer;
+    display: inline-block;
+    color: #f44336; 
+}
+
+.single-delete-btn:hover{
+    background: #eee;
+}
+
+.thumbnails-wrapper{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.thumbnail-img{
+    border: 1px solid #ccc;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width:767px){
+    h1{
+        font-size:28px;
+    }
+    .content-wrapper,.btn-wrapper{
+        justify-content: center;
+    }
+    .img-name-wrapper{
+        margin-bottom:15px;
+    }
+}
