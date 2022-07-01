@@ -16,6 +16,14 @@ body{
     display: flex;
     justify-content: center;   
     margin-bottom: 20px;
+
+}
+
+#enterTags{
+    position: absolute;
+    background-color: transparent;
+    outline: none;
+    border: none;
 }
 
 #sliderCanvas{
